@@ -1,0 +1,17 @@
+def isValidPhone (tmp):
+    #check length long return false 13
+    #check length short return false 12
+    #check for parenthesis @13
+    #is.digit use slicing [:]
+    #be careful using multiple ands
+    #use done.upper == DONE
+
+#use while loop with sentinel to wait for correct input.
+#"Done" is exit to sentinel as input of last name
+
+lastName = input()
+while lastName != "DONE":
+    #use while loop for 
+    #phone, firstname
+     lastName = input()
+    

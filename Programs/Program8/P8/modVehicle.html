@@ -1,0 +1,358 @@
+#7799EE<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module modVehicle</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#F0F0F8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>modVehicle</strong></big></big> (11/12/18)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/media/paul/0677-4DC4/School2018Fall/CSIS_153/Programs/Program8/modVehicle.py">/media/paul/0677-4DC4/School2018Fall/CSIS_153/Programs/Program8/modVehicle.py</a></font></td></tr></table>
+    <p><tt>#Paul&nbsp;Kummer<br>
+#CSIS&nbsp;153<br>
+#Program&nbsp;8</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#77EAEE">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#77EAEE"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="modVehicle.html#Vehicle">Vehicle</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="modVehicle.html#Car">Car</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#1CBD28">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Car">class <strong>Car</strong></a>(<a href="modVehicle.html#Vehicle">Vehicle</a>)</font></td></tr>
+    
+<tr><td bgcolor="#1CBD28"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="modVehicle.html#Car">Car</a></dd>
+<dd><a href="modVehicle.html#Vehicle">Vehicle</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Car-__init__"><strong>__init__</strong></a>(self, tmpVIN=0, tmpTransportionType='None', tmpYear=0, tmpColor='None', tmpMake='None')</dt><dd><tt>Pre-Condition:<br>
+*tmpVIN&nbsp;and&nbsp;tmpYear&nbsp;must&nbsp;be&nbsp;an&nbsp;integer<br>
+*tmpTransportationType,&nbsp;tmpColor,&nbsp;and&nbsp;tmpMake&nbsp;must&nbsp;be&nbsp;a&nbsp;string<br>
+*<a href="#Vehicle">Vehicle</a>&nbsp;class&nbsp;must&nbsp;exist&nbsp;and&nbsp;handle&nbsp;tmpVIN,&nbsp;tmpTransportationType<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tmpYear,&nbsp;and&nbsp;tmpColor&nbsp;arguments<br>
+&nbsp;<br>
+Post-Condition:<br>
+*<a href="#Vehicle">Vehicle</a>._numVehicles&nbsp;increased&nbsp;by&nbsp;one<br>
+*user&nbsp;arguments&nbsp;assigned&nbsp;names&nbsp;for&nbsp;<a href="#Vehicle">Vehicle</a>&nbsp;instance<br>
+*<a href="#Car">Car</a>._numCars&nbsp;increased&nbsp;by&nbsp;one<br>
+*<a href="#Car">Car</a>._numHondas&nbsp;increased&nbsp;by&nbsp;one&nbsp;if&nbsp;make&nbsp;is&nbsp;honda<br>
+&nbsp;<br>
+Description:<br>
+user&nbsp;defined&nbsp;arguments&nbsp;are&nbsp;assigned&nbsp;as&nbsp;attributes&nbsp;for&nbsp;the&nbsp;new&nbsp;<a href="builtins.html#object">object</a><br>
+and&nbsp;the&nbsp;number&nbsp;of&nbsp;vehicles&nbsp;and&nbsp;cars&nbsp;is&nbsp;increased</tt></dd></dl>
+
+<dl><dt><a name="Car-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Pre-Condition:<br>
+self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+&nbsp;<br>
+Post-Condition:<br>
+String&nbsp;with&nbsp;values&nbsp;of&nbsp;<a href="builtins.html#object">object</a>&nbsp;attributes&nbsp;is&nbsp;created<br>
+&nbsp;<br>
+Description:<br>
+Return&nbsp;a&nbsp;string&nbsp;listing&nbsp;<a href="builtins.html#object">object</a>'s&nbsp;attributes</tt></dd></dl>
+
+<dl><dt><a name="Car-getMake"><strong>getMake</strong></a>(self)</dt><dd><tt>Pre-Condition:<br>
+self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+&nbsp;<br>
+Post-Condition:<br>
+None<br>
+&nbsp;<br>
+Description:<br>
+Returns&nbsp;the&nbsp;make&nbsp;of&nbsp;<a href="#Car">Car</a></tt></dd></dl>
+
+<dl><dt><a name="Car-getNumCars"><strong>getNumCars</strong></a>()</dt><dd><tt>Pre-Condition:<br>
+None<br>
+&nbsp;<br>
+Post-Condition:<br>
+None<br>
+&nbsp;<br>
+Description:<br>
+Returns&nbsp;the&nbsp;number&nbsp;of&nbsp;cars</tt></dd></dl>
+
+<dl><dt><a name="Car-getNumHondas"><strong>getNumHondas</strong></a>()</dt><dd><tt>Pre-Condition:<br>
+None<br>
+&nbsp;<br>
+Post-Condition:<br>
+None<br>
+&nbsp;<br>
+Description:<br>
+Returns&nbsp;the&nbsp;number&nbsp;of&nbsp;Hondas</tt></dd></dl>
+
+<dl><dt><a name="Car-setMake"><strong>setMake</strong></a>(self, newMake)</dt><dd><tt>Pre-Condition:<br>
+*self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+*newMake&nbsp;must&nbsp;be&nbsp;a&nbsp;String<br>
+&nbsp;<br>
+Post-Condition:<br>
+*An&nbsp;<a href="builtins.html#object">object</a>&nbsp;of&nbsp;car&nbsp;has&nbsp;it's&nbsp;make&nbsp;changed&nbsp;to&nbsp;the&nbsp;string&nbsp;newMake<br>
+*if&nbsp;Make&nbsp;is&nbsp;changed&nbsp;to&nbsp;Honda&nbsp;and&nbsp;wasn't&nbsp;previouse&nbsp;Honda&nbsp;the&nbsp;count<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;Hondas&nbsp;is&nbsp;increased&nbsp;by&nbsp;one.&nbsp;If&nbsp;make&nbsp;was&nbsp;Honda&nbsp;and&nbsp;changed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;something&nbsp;different,&nbsp;Honda&nbsp;count&nbsp;decreases&nbsp;by&nbsp;one.<br>
+&nbsp;<br>
+Description:</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="modVehicle.html#Vehicle">Vehicle</a>:<br>
+<dl><dt><a name="Car-calcVehicleAge"><strong>calcVehicleAge</strong></a>(self)</dt><dd><tt>Pre-Condition:<br>
+*self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+*date&nbsp;must&nbsp;be&nbsp;imported&nbsp;and&nbsp;<a href="#Vehicle">Vehicle</a>&nbsp;year&nbsp;must&nbsp;be&nbsp;an&nbsp;integer<br>
+&nbsp;<br>
+Post-Condition:<br>
+VehicleAge&nbsp;is&nbsp;assigned&nbsp;integer&nbsp;from&nbsp;current&nbsp;year&nbsp;minus&nbsp;year&nbsp;built<br>
+&nbsp;<br>
+Description:<br>
+Returns&nbsp;the&nbsp;age&nbsp;of&nbsp;the&nbsp;vehicle&nbsp;based&nbsp;on&nbsp;current&nbsp;date</tt></dd></dl>
+
+<dl><dt><a name="Car-getColor"><strong>getColor</strong></a>(self)</dt><dd><tt>Pre-Condition:<br>
+self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+&nbsp;<br>
+Post-Condition:<br>
+None<br>
+&nbsp;<br>
+Description:<br>
+Returns&nbsp;the&nbsp;color&nbsp;of&nbsp;vehicle</tt></dd></dl>
+
+<dl><dt><a name="Car-getNumVehicles"><strong>getNumVehicles</strong></a>()</dt><dd><tt>Pre-Condition:<br>
+None<br>
+&nbsp;<br>
+Post-Condition:<br>
+None<br>
+&nbsp;<br>
+Description:<br>
+Returns&nbsp;the&nbsp;number&nbsp;of&nbsp;vehicles</tt></dd></dl>
+
+<dl><dt><a name="Car-getType"><strong>getType</strong></a>(self)</dt><dd><tt>Pre-Condition:<br>
+self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+&nbsp;<br>
+Post-Condition:<br>
+None<br>
+&nbsp;<br>
+Description:<br>
+Returns&nbsp;vehicles&nbsp;type</tt></dd></dl>
+
+<dl><dt><a name="Car-getVIN"><strong>getVIN</strong></a>(self)</dt><dd><tt>Pre-Condition:<br>
+self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+&nbsp;<br>
+Post-Condition:<br>
+None<br>
+&nbsp;<br>
+Description:<br>
+Returns&nbsp;vehicles&nbsp;VIN</tt></dd></dl>
+
+<dl><dt><a name="Car-getYear"><strong>getYear</strong></a>(self)</dt><dd><tt>Pre-Condition:<br>
+self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+&nbsp;<br>
+Post-Condition:<br>
+None<br>
+&nbsp;<br>
+Description:<br>
+Returns&nbsp;year&nbsp;vehicle&nbsp;was&nbsp;built</tt></dd></dl>
+
+<dl><dt><a name="Car-setColor"><strong>setColor</strong></a>(self, newColor)</dt><dd><tt>Pre-Condition:<br>
+*self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+*newColor&nbsp;must&nbsp;be&nbsp;a&nbsp;string<br>
+&nbsp;<br>
+Post-Condition:<br>
+instance's&nbsp;color&nbsp;is&nbsp;assigned&nbsp;new&nbsp;string&nbsp;value<br>
+&nbsp;<br>
+Description:<br>
+Color&nbsp;of&nbsp;vehicle&nbsp;is&nbsp;changed</tt></dd></dl>
+
+<dl><dt><a name="Car-setType"><strong>setType</strong></a>(self, newType)</dt><dd><tt>Pre-Condition:<br>
+*self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+*newType&nbsp;must&nbsp;be&nbsp;a&nbsp;string<br>
+&nbsp;<br>
+Post-Condition:<br>
+instance's&nbsp;Type&nbsp;is&nbsp;assigned&nbsp;new&nbsp;string&nbsp;value<br>
+&nbsp;<br>
+Description:<br>
+Type&nbsp;is&nbsp;changed&nbsp;for&nbsp;a&nbsp;vehicle</tt></dd></dl>
+
+<dl><dt><a name="Car-setVIN"><strong>setVIN</strong></a>(self, newVIN)</dt><dd><tt>Pre-Condition:<br>
+*self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+*newVIN&nbsp;must&nbsp;be&nbsp;an&nbsp;integer<br>
+&nbsp;<br>
+Post-Condition:<br>
+instance's&nbsp;VIN&nbsp;is&nbsp;assigned&nbsp;new&nbsp;integer&nbsp;value<br>
+&nbsp;<br>
+Description:<br>
+VIN&nbsp;is&nbsp;changed&nbsp;for&nbsp;a&nbsp;vehicle</tt></dd></dl>
+
+<dl><dt><a name="Car-setYear"><strong>setYear</strong></a>(self, newYear)</dt><dd><tt>Pre-Condition:<br>
+*self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+*newYear&nbsp;must&nbsp;be&nbsp;an&nbsp;integer<br>
+&nbsp;<br>
+Post-Condition:<br>
+instance's&nbsp;Year&nbsp;is&nbsp;assigned&nbsp;new&nbsp;integer&nbsp;value<br>
+&nbsp;<br>
+Description:<br>
+Year&nbsp;built&nbsp;for&nbsp;a&nbsp;vehicle&nbsp;is&nbsp;changed</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="modVehicle.html#Vehicle">Vehicle</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#1CBD28">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Vehicle">class <strong>Vehicle</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr><td bgcolor="#1CBD28"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Vehicle-__init__"><strong>__init__</strong></a>(self, tmpVIN=0, tmpTransportionType='None', tmpYear=0, tmpColor='None')</dt><dd><tt>Pre-Condition:<br>
+*tmpVIN&nbsp;and&nbsp;tmpYear&nbsp;must&nbsp;be&nbsp;an&nbsp;integer<br>
+*tmpTransportationType&nbsp;and&nbsp;tmpColor&nbsp;must&nbsp;be&nbsp;a&nbsp;string<br>
+&nbsp;<br>
+Post-Condition:<br>
+*<a href="#Vehicle">Vehicle</a>._numVehicles&nbsp;increased&nbsp;by&nbsp;one<br>
+*user&nbsp;arguments&nbsp;assigned&nbsp;names&nbsp;for&nbsp;<a href="#Vehicle">Vehicle</a>&nbsp;instance<br>
+&nbsp;<br>
+Description:<br>
+user&nbsp;defined&nbsp;arguments&nbsp;are&nbsp;assigned&nbsp;as&nbsp;attributes&nbsp;for&nbsp;the&nbsp;new&nbsp;<a href="builtins.html#object">object</a><br>
+and&nbsp;the&nbsp;number&nbsp;of&nbsp;vehicles&nbsp;is&nbsp;increased</tt></dd></dl>
+
+<dl><dt><a name="Vehicle-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Pre-Condition:<br>
+self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+&nbsp;<br>
+Post-Condition:<br>
+String&nbsp;with&nbsp;values&nbsp;of&nbsp;<a href="builtins.html#object">object</a>&nbsp;attributes&nbsp;is&nbsp;created<br>
+&nbsp;<br>
+Description:<br>
+Return&nbsp;a&nbsp;string&nbsp;listing&nbsp;<a href="builtins.html#object">object</a>'s&nbsp;attributes</tt></dd></dl>
+
+<dl><dt><a name="Vehicle-calcVehicleAge"><strong>calcVehicleAge</strong></a>(self)</dt><dd><tt>Pre-Condition:<br>
+*self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+*date&nbsp;must&nbsp;be&nbsp;imported&nbsp;and&nbsp;<a href="#Vehicle">Vehicle</a>&nbsp;year&nbsp;must&nbsp;be&nbsp;an&nbsp;integer<br>
+&nbsp;<br>
+Post-Condition:<br>
+VehicleAge&nbsp;is&nbsp;assigned&nbsp;integer&nbsp;from&nbsp;current&nbsp;year&nbsp;minus&nbsp;year&nbsp;built<br>
+&nbsp;<br>
+Description:<br>
+Returns&nbsp;the&nbsp;age&nbsp;of&nbsp;the&nbsp;vehicle&nbsp;based&nbsp;on&nbsp;current&nbsp;date</tt></dd></dl>
+
+<dl><dt><a name="Vehicle-getColor"><strong>getColor</strong></a>(self)</dt><dd><tt>Pre-Condition:<br>
+self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+&nbsp;<br>
+Post-Condition:<br>
+None<br>
+&nbsp;<br>
+Description:<br>
+Returns&nbsp;the&nbsp;color&nbsp;of&nbsp;vehicle</tt></dd></dl>
+
+<dl><dt><a name="Vehicle-getNumVehicles"><strong>getNumVehicles</strong></a>()</dt><dd><tt>Pre-Condition:<br>
+None<br>
+&nbsp;<br>
+Post-Condition:<br>
+None<br>
+&nbsp;<br>
+Description:<br>
+Returns&nbsp;the&nbsp;number&nbsp;of&nbsp;vehicles</tt></dd></dl>
+
+<dl><dt><a name="Vehicle-getType"><strong>getType</strong></a>(self)</dt><dd><tt>Pre-Condition:<br>
+self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+&nbsp;<br>
+Post-Condition:<br>
+None<br>
+&nbsp;<br>
+Description:<br>
+Returns&nbsp;vehicles&nbsp;type</tt></dd></dl>
+
+<dl><dt><a name="Vehicle-getVIN"><strong>getVIN</strong></a>(self)</dt><dd><tt>Pre-Condition:<br>
+self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+&nbsp;<br>
+Post-Condition:<br>
+None<br>
+&nbsp;<br>
+Description:<br>
+Returns&nbsp;vehicles&nbsp;VIN</tt></dd></dl>
+
+<dl><dt><a name="Vehicle-getYear"><strong>getYear</strong></a>(self)</dt><dd><tt>Pre-Condition:<br>
+self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+&nbsp;<br>
+Post-Condition:<br>
+None<br>
+&nbsp;<br>
+Description:<br>
+Returns&nbsp;year&nbsp;vehicle&nbsp;was&nbsp;built</tt></dd></dl>
+
+<dl><dt><a name="Vehicle-setColor"><strong>setColor</strong></a>(self, newColor)</dt><dd><tt>Pre-Condition:<br>
+*self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+*newColor&nbsp;must&nbsp;be&nbsp;a&nbsp;string<br>
+&nbsp;<br>
+Post-Condition:<br>
+instance's&nbsp;color&nbsp;is&nbsp;assigned&nbsp;new&nbsp;string&nbsp;value<br>
+&nbsp;<br>
+Description:<br>
+Color&nbsp;of&nbsp;vehicle&nbsp;is&nbsp;changed</tt></dd></dl>
+
+<dl><dt><a name="Vehicle-setType"><strong>setType</strong></a>(self, newType)</dt><dd><tt>Pre-Condition:<br>
+*self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+*newType&nbsp;must&nbsp;be&nbsp;a&nbsp;string<br>
+&nbsp;<br>
+Post-Condition:<br>
+instance's&nbsp;Type&nbsp;is&nbsp;assigned&nbsp;new&nbsp;string&nbsp;value<br>
+&nbsp;<br>
+Description:<br>
+Type&nbsp;is&nbsp;changed&nbsp;for&nbsp;a&nbsp;vehicle</tt></dd></dl>
+
+<dl><dt><a name="Vehicle-setVIN"><strong>setVIN</strong></a>(self, newVIN)</dt><dd><tt>Pre-Condition:<br>
+*self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+*newVIN&nbsp;must&nbsp;be&nbsp;an&nbsp;integer<br>
+&nbsp;<br>
+Post-Condition:<br>
+instance's&nbsp;VIN&nbsp;is&nbsp;assigned&nbsp;new&nbsp;integer&nbsp;value<br>
+&nbsp;<br>
+Description:<br>
+VIN&nbsp;is&nbsp;changed&nbsp;for&nbsp;a&nbsp;vehicle</tt></dd></dl>
+
+<dl><dt><a name="Vehicle-setYear"><strong>setYear</strong></a>(self, newYear)</dt><dd><tt>Pre-Condition:<br>
+*self&nbsp;must&nbsp;be&nbsp;an&nbsp;Object&nbsp;of&nbsp;<a href="#Vehicle">Vehicle</a><br>
+*newYear&nbsp;must&nbsp;be&nbsp;an&nbsp;integer<br>
+&nbsp;<br>
+Post-Condition:<br>
+instance's&nbsp;Year&nbsp;is&nbsp;assigned&nbsp;new&nbsp;integer&nbsp;value<br>
+&nbsp;<br>
+Description:<br>
+Year&nbsp;built&nbsp;for&nbsp;a&nbsp;vehicle&nbsp;is&nbsp;changed</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Author</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Paul&nbsp;Kummer</td></tr></table>
+</body></html>

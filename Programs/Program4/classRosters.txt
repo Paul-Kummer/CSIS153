@@ -1,0 +1,24 @@
+Professor Smith
+Math 101
+Jill Jones,Rodney Stiller,Becky Brown
+Professor Caulfield
+Chem 203
+Rodney Stiller,John Doe,Jill Doe,Becky Brown
+Professor Kummer
+CSIS 912
+Bill Gates,Bob Dole,Steve Jobs
+Professor Harriot
+Hist 204
+Bill Jones,Kenny Loggins,Becky Brown,Barry Brown,Larry Brown
+Professor Gannondorf
+VLAN 202
+Mike Myers, Freddy Kruger,Chucky Chuck,Hannibal Lecter
+Professor Dumbledor
+MGIC 101
+Kenny Loggins
+Professor Kummer
+Hist 204
+Kenny Loggins,Rodney Stiller,Chucky Chuck
+Professor Kummer
+Math 101
+Kenny Loggins,Rodney Stiller,Chucky Chuck

@@ -1,0 +1,26 @@
+Due Wed, Oct 31
+
+augment fraction.py AND testfraction.py
+
+adding methods to
+*add fraction
+*mult fraction
+*div fraction
+*sub fraction
+*test for equal of two fracs
+*test less than of two fracs
+*test greater than of two fracs
+
+**override floordiv
+
+
+OOP
+*data encapsulation
+*inheritance
+*polymorphism
+	-example: len function, print function
+	
+	def__add__(self,op2):
+		#caluclate the resultnumerator
+		#calculate the resultdenominator
+		#fraction(result1,result2)

@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module modFraction</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>modFraction</strong></big></big> (10/31/18)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/media/paul/0677-4DC4/School2018Fall/CSIS_153/Programs/Program7/P7/modFraction.py">/media/paul/0677-4DC4/School2018Fall/CSIS_153/Programs/Program7/P7/modFraction.py</a></font></td></tr></table>
+    <p><tt>#Paul&nbsp;Kummer<br>
+#CSIS&nbsp;153<br>
+#Program&nbsp;7<br>
+#Due:&nbsp;10/31/18</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="modFraction.html#Fraction">Fraction</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Fraction">class <strong>Fraction</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>#class&nbsp;for&nbsp;creating&nbsp;fraction&nbsp;objects<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Fraction-__add__"><strong>__add__</strong></a>(self, tmpValue)</dt><dd><tt>Pre-conditon:&nbsp;Requires&nbsp;two&nbsp;arguments.&nbsp;the&nbsp;first&nbsp;argument&nbsp;to&nbsp;be&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;the&nbsp;second&nbsp;to&nbsp;be&nbsp;a&nbsp;rational&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;or&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;<br>
+Post-conditions:&nbsp;Adds&nbsp;the&nbsp;numerical&nbsp;values&nbsp;of&nbsp;both&nbsp;arguments&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;create&nbsp;a&nbsp;new&nbsp;numerator&nbsp;and&nbsp;denominator.&nbsp;These<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;are&nbsp;then&nbsp;used&nbsp;to&nbsp;create&nbsp;a&nbsp;new&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;<br>
+Description:&nbsp;A&nbsp;new&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;created&nbsp;and&nbsp;returned&nbsp;from<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;two&nbsp;arguments.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__eq__"><strong>__eq__</strong></a>(self, tmpValue)</dt><dd><tt>Pre-conditon:&nbsp;Requires&nbsp;two&nbsp;arguments.&nbsp;the&nbsp;first&nbsp;argument&nbsp;to&nbsp;be&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;the&nbsp;second&nbsp;to&nbsp;be&nbsp;a&nbsp;rational&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;or&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>.&nbsp;<br>
+&nbsp;<br>
+Post-conditions:&nbsp;True&nbsp;or&nbsp;False<br>
+&nbsp;<br>
+Description:&nbsp;The&nbsp;first&nbsp;numerical&nbsp;value&nbsp;is&nbsp;compared&nbsp;to&nbsp;the&nbsp;second<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numerical&nbsp;value.&nbsp;If&nbsp;the&nbsp;first&nbsp;Value&nbsp;is&nbsp;equal&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;second,&nbsp;True&nbsp;is&nbsp;returned.&nbsp;Otherwise&nbsp;False&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returned.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__float__"><strong>__float__</strong></a>(self)</dt><dd><tt>Pre-conditon:&nbsp;One&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;argument<br>
+&nbsp;<br>
+Post-conditions:&nbsp;Floating&nbsp;number<br>
+&nbsp;<br>
+Description:&nbsp;A&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;converted&nbsp;to&nbsp;its&nbsp;decimal&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;equivalent.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__floordiv__"><strong>__floordiv__</strong></a>(self, tmpValue)</dt><dd><tt>Pre-conditon:&nbsp;Requires&nbsp;two&nbsp;arguments.&nbsp;the&nbsp;first&nbsp;argument&nbsp;to&nbsp;be&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;the&nbsp;second&nbsp;to&nbsp;be&nbsp;a&nbsp;rational&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;or&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>.&nbsp;<br>
+&nbsp;<br>
+Post-conditions:&nbsp;divides&nbsp;the&nbsp;numerical&nbsp;values&nbsp;of&nbsp;both&nbsp;arguments&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;create&nbsp;a&nbsp;new&nbsp;numerator&nbsp;and&nbsp;denominator.&nbsp;These<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;are&nbsp;then&nbsp;used&nbsp;to&nbsp;create&nbsp;a&nbsp;new&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;<br>
+Description:&nbsp;A&nbsp;new&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;created&nbsp;and&nbsp;returned&nbsp;from<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;two&nbsp;arguments.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__ge__"><strong>__ge__</strong></a>(self, tmpValue)</dt><dd><tt>Pre-conditon:&nbsp;Requires&nbsp;two&nbsp;arguments.&nbsp;the&nbsp;first&nbsp;argument&nbsp;to&nbsp;be&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;the&nbsp;second&nbsp;to&nbsp;be&nbsp;a&nbsp;rational&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;or&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>.&nbsp;<br>
+&nbsp;<br>
+Post-conditions:&nbsp;True&nbsp;or&nbsp;False<br>
+&nbsp;<br>
+Description:&nbsp;The&nbsp;first&nbsp;numerical&nbsp;value&nbsp;is&nbsp;compared&nbsp;to&nbsp;the&nbsp;second<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numerical&nbsp;value.&nbsp;If&nbsp;the&nbsp;first&nbsp;Value&nbsp;is&nbsp;greater&nbsp;than<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;equal&nbsp;to&nbsp;the&nbsp;second,&nbsp;True&nbsp;is&nbsp;returned.&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Otherwise&nbsp;False&nbsp;is&nbsp;returned.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__gt__"><strong>__gt__</strong></a>(self, tmpValue)</dt><dd><tt>Pre-conditon:&nbsp;Requires&nbsp;two&nbsp;arguments.&nbsp;the&nbsp;first&nbsp;argument&nbsp;to&nbsp;be&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;the&nbsp;second&nbsp;to&nbsp;be&nbsp;a&nbsp;rational&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;or&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>.&nbsp;<br>
+&nbsp;<br>
+Post-conditions:&nbsp;is&nbsp;True&nbsp;or&nbsp;False<br>
+&nbsp;<br>
+Description:&nbsp;The&nbsp;first&nbsp;numerical&nbsp;value&nbsp;is&nbsp;compared&nbsp;to&nbsp;the&nbsp;second<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numerical&nbsp;value.&nbsp;If&nbsp;the&nbsp;first&nbsp;Value&nbsp;is&nbsp;greater&nbsp;than<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;second,&nbsp;True&nbsp;is&nbsp;returned.&nbsp;Otherwise&nbsp;False&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returned.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__init__"><strong>__init__</strong></a>(self, tmpNumerator=0, tmpDenominator=1)</dt><dd><tt>Pre-conditon:&nbsp;must&nbsp;pass&nbsp;no&nbsp;more&nbsp;than&nbsp;two&nbsp;rational&nbsp;numbers&nbsp;to&nbsp;<a href="#Fraction">Fraction</a><br>
+&nbsp;<br>
+Post-conditions:&nbsp;make&nbsp;private&nbsp;attributes&nbsp;numerator&nbsp;and&nbsp;denominator&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;values&nbsp;reduced<br>
+&nbsp;<br>
+Description:&nbsp;create&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;with&nbsp;numerator&nbsp;and&nbsp;denominator</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__int__"><strong>__int__</strong></a>(self)</dt><dd><tt>Pre-conditon:&nbsp;One&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;argument<br>
+&nbsp;<br>
+Post-conditions:&nbsp;Integer<br>
+&nbsp;<br>
+Description:&nbsp;A&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;converted&nbsp;to&nbsp;its&nbsp;integer&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;equivalent.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__invert__"><strong>__invert__</strong></a>(self)</dt><dd><tt>Pre-conditon:&nbsp;One&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;argument<br>
+&nbsp;<br>
+Post-conditions:&nbsp;inverse&nbsp;of&nbsp;float&nbsp;value&nbsp;from&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigned&nbsp;to&nbsp;variable.&nbsp;Then&nbsp;a&nbsp;new&nbsp;fraction&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;created&nbsp;from&nbsp;inverse&nbsp;float.<br>
+&nbsp;<br>
+Description:&nbsp;A&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;converted&nbsp;to&nbsp;an&nbsp;inverted<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;returned.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__le__"><strong>__le__</strong></a>(self, tmpValue)</dt><dd><tt>Pre-conditon:&nbsp;Requires&nbsp;two&nbsp;arguments.&nbsp;the&nbsp;first&nbsp;argument&nbsp;to&nbsp;be&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;the&nbsp;second&nbsp;to&nbsp;be&nbsp;a&nbsp;rational&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;or&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>.&nbsp;<br>
+&nbsp;<br>
+Post-conditions:&nbsp;True&nbsp;or&nbsp;False<br>
+&nbsp;<br>
+Description:&nbsp;The&nbsp;first&nbsp;numerical&nbsp;value&nbsp;is&nbsp;compared&nbsp;to&nbsp;the&nbsp;second<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numerical&nbsp;value.&nbsp;If&nbsp;the&nbsp;first&nbsp;Value&nbsp;is&nbsp;less&nbsp;than<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;equal&nbsp;to&nbsp;the&nbsp;second,&nbsp;True&nbsp;is&nbsp;returned.&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Otherwise&nbsp;False&nbsp;is&nbsp;returned.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__lt__"><strong>__lt__</strong></a>(self, tmpValue)</dt><dd><tt>Pre-conditon:&nbsp;Requires&nbsp;two&nbsp;arguments.&nbsp;the&nbsp;first&nbsp;argument&nbsp;to&nbsp;be&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;the&nbsp;second&nbsp;to&nbsp;be&nbsp;a&nbsp;rational&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;or&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>.&nbsp;<br>
+&nbsp;<br>
+Post-conditions:&nbsp;True&nbsp;or&nbsp;False<br>
+&nbsp;<br>
+Description:&nbsp;The&nbsp;first&nbsp;numerical&nbsp;value&nbsp;is&nbsp;compared&nbsp;to&nbsp;the&nbsp;second<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numerical&nbsp;value.&nbsp;If&nbsp;the&nbsp;first&nbsp;Value&nbsp;is&nbsp;less&nbsp;than<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;second,&nbsp;True&nbsp;is&nbsp;returned.&nbsp;Otherwise&nbsp;False&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;returned.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__mul__"><strong>__mul__</strong></a>(self, tmpValue)</dt><dd><tt>Pre-conditon:&nbsp;Requires&nbsp;two&nbsp;arguments.&nbsp;the&nbsp;first&nbsp;argument&nbsp;to&nbsp;be&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;the&nbsp;second&nbsp;to&nbsp;be&nbsp;a&nbsp;rational&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;or&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>.&nbsp;<br>
+&nbsp;<br>
+Post-conditions:&nbsp;multiplies&nbsp;the&nbsp;numerical&nbsp;values&nbsp;of&nbsp;both&nbsp;arguments&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;create&nbsp;a&nbsp;new&nbsp;numerator&nbsp;and&nbsp;denominator.&nbsp;These<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;are&nbsp;then&nbsp;used&nbsp;to&nbsp;create&nbsp;a&nbsp;new&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;<br>
+Description:&nbsp;A&nbsp;new&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;created&nbsp;and&nbsp;returned&nbsp;from<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;two&nbsp;arguments.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__ne__"><strong>__ne__</strong></a>(self, tmpValue)</dt><dd><tt>Pre-conditon:&nbsp;Requires&nbsp;two&nbsp;arguments.&nbsp;the&nbsp;first&nbsp;argument&nbsp;to&nbsp;be&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;the&nbsp;second&nbsp;to&nbsp;be&nbsp;a&nbsp;rational&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;or&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>.&nbsp;<br>
+&nbsp;<br>
+Post-conditions:&nbsp;is&nbsp;True&nbsp;or&nbsp;False<br>
+&nbsp;<br>
+Description:&nbsp;The&nbsp;first&nbsp;numerical&nbsp;value&nbsp;is&nbsp;compared&nbsp;to&nbsp;the&nbsp;second<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numerical&nbsp;value.&nbsp;If&nbsp;the&nbsp;first&nbsp;Value&nbsp;is&nbsp;not&nbsp;equal&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;The&nbsp;second,&nbsp;True&nbsp;is&nbsp;returned.&nbsp;Otherwise&nbsp;False<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is&nbsp;returned.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__radd__"><strong>__radd__</strong></a>(self, tmpValue)</dt><dd><tt>Pre-conditon:&nbsp;Requires&nbsp;two&nbsp;arguments.&nbsp;the&nbsp;first&nbsp;argument&nbsp;to&nbsp;be&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;the&nbsp;second&nbsp;to&nbsp;be&nbsp;a&nbsp;rational&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;or&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>,&nbsp;including&nbsp;float&nbsp;and&nbsp;int<br>
+&nbsp;<br>
+Post-conditions:&nbsp;Adds&nbsp;the&nbsp;numerical&nbsp;values&nbsp;of&nbsp;both&nbsp;arguments&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;create&nbsp;a&nbsp;new&nbsp;numerator&nbsp;and&nbsp;denominator.&nbsp;These<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;are&nbsp;then&nbsp;used&nbsp;to&nbsp;create&nbsp;a&nbsp;new&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;<br>
+Description:&nbsp;A&nbsp;new&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;created&nbsp;and&nbsp;returned&nbsp;from<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;two&nbsp;arguments.&nbsp;Only&nbsp;executes&nbsp;if&nbsp;initially&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;non-fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;was&nbsp;attempted&nbsp;to&nbsp;be&nbsp;added&nbsp;to&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__rfloordiv__"><strong>__rfloordiv__</strong></a>(self, tmpValue)</dt><dd><tt>Pre-conditon:&nbsp;Requires&nbsp;two&nbsp;arguments.&nbsp;the&nbsp;first&nbsp;argument&nbsp;to&nbsp;be&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;the&nbsp;second&nbsp;to&nbsp;be&nbsp;a&nbsp;rational&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;or&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>.&nbsp;<br>
+&nbsp;<br>
+Post-conditions:&nbsp;divides&nbsp;the&nbsp;numerical&nbsp;values&nbsp;of&nbsp;both&nbsp;arguments&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;create&nbsp;a&nbsp;new&nbsp;numerator&nbsp;and&nbsp;denominator.&nbsp;These<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;are&nbsp;then&nbsp;used&nbsp;to&nbsp;create&nbsp;a&nbsp;new&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;<br>
+Description:&nbsp;A&nbsp;new&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;created&nbsp;and&nbsp;returned&nbsp;from<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;two&nbsp;arguments.&nbsp;Only&nbsp;executes&nbsp;if&nbsp;initially&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;non-fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;was&nbsp;attempted&nbsp;to&nbsp;be&nbsp;divided<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;a&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__rmul__"><strong>__rmul__</strong></a>(self, tmpValue)</dt><dd><tt>Pre-conditon:&nbsp;Requires&nbsp;two&nbsp;arguments.&nbsp;the&nbsp;first&nbsp;argument&nbsp;to&nbsp;be&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;the&nbsp;second&nbsp;to&nbsp;be&nbsp;a&nbsp;rational&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;or&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>.&nbsp;<br>
+&nbsp;<br>
+Post-conditions:&nbsp;multiplies&nbsp;the&nbsp;numerical&nbsp;values&nbsp;of&nbsp;both&nbsp;arguments&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;create&nbsp;a&nbsp;new&nbsp;numerator&nbsp;and&nbsp;denominator.&nbsp;These<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;are&nbsp;then&nbsp;used&nbsp;to&nbsp;create&nbsp;a&nbsp;new&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;<br>
+Description:&nbsp;A&nbsp;new&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;created&nbsp;and&nbsp;returned&nbsp;from<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;two&nbsp;arguments.&nbsp;Only&nbsp;executes&nbsp;if&nbsp;initially&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;non-fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;was&nbsp;attempted&nbsp;to&nbsp;be&nbsp;multiplied<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;a&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__rsub__"><strong>__rsub__</strong></a>(self, tmpValue)</dt><dd><tt>Pre-conditon:&nbsp;Requires&nbsp;two&nbsp;arguments.&nbsp;the&nbsp;first&nbsp;argument&nbsp;to&nbsp;be&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;the&nbsp;second&nbsp;to&nbsp;be&nbsp;a&nbsp;rational&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;or&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>.&nbsp;<br>
+&nbsp;<br>
+Post-conditions:&nbsp;subtracts&nbsp;the&nbsp;numerical&nbsp;values&nbsp;of&nbsp;both&nbsp;arguments&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;create&nbsp;a&nbsp;new&nbsp;numerator&nbsp;and&nbsp;denominator.&nbsp;These<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;are&nbsp;then&nbsp;used&nbsp;to&nbsp;create&nbsp;a&nbsp;new&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;<br>
+Description:&nbsp;A&nbsp;new&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;created&nbsp;and&nbsp;returned&nbsp;from<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;two&nbsp;arguments.&nbsp;Only&nbsp;executes&nbsp;if&nbsp;initially&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;non-fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;was&nbsp;attempted&nbsp;to&nbsp;be&nbsp;subtracted<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;a&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__rtruediv__"><strong>__rtruediv__</strong></a>(self, tmpValue)</dt><dd><tt>Pre-conditon:&nbsp;Requires&nbsp;two&nbsp;arguments.<br>
+&nbsp;<br>
+Post-conditions:&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;created&nbsp;from&nbsp;floor&nbsp;division&nbsp;is&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigned&nbsp;a&nbsp;variable<br>
+&nbsp;<br>
+Description:&nbsp;Takes&nbsp;two&nbsp;arguments&nbsp;and&nbsp;makes&nbsp;them&nbsp;arguments&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;floor&nbsp;division.&nbsp;Then&nbsp;whatever&nbsp;is&nbsp;returned&nbsp;from<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;floor&nbsp;division&nbsp;is&nbsp;returned&nbsp;by&nbsp;true&nbsp;division.&nbsp;Only&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;executes&nbsp;if&nbsp;initially&nbsp;a&nbsp;non-fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;was&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;attempted&nbsp;to&nbsp;be&nbsp;true&nbsp;divided&nbsp;to&nbsp;a&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Pre-conditon:&nbsp;None<br>
+&nbsp;<br>
+Post-conditions:&nbsp;None<br>
+&nbsp;<br>
+Description:&nbsp;Returns&nbsp;a&nbsp;string&nbsp;when&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;called</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__sub__"><strong>__sub__</strong></a>(self, tmpValue)</dt><dd><tt>Pre-conditon:&nbsp;Requires&nbsp;two&nbsp;arguments.&nbsp;the&nbsp;first&nbsp;argument&nbsp;to&nbsp;be&nbsp;a&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;and&nbsp;the&nbsp;second&nbsp;to&nbsp;be&nbsp;a&nbsp;rational&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;or&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;<br>
+Post-conditions:&nbsp;subtracts&nbsp;the&nbsp;numerical&nbsp;values&nbsp;of&nbsp;both&nbsp;arguments&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;create&nbsp;a&nbsp;new&nbsp;numerator&nbsp;and&nbsp;denominator.&nbsp;These<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;are&nbsp;then&nbsp;used&nbsp;to&nbsp;create&nbsp;a&nbsp;new&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;<br>
+Description:&nbsp;A&nbsp;new&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;is&nbsp;created&nbsp;and&nbsp;returned&nbsp;from<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;two&nbsp;arguments.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-__truediv__"><strong>__truediv__</strong></a>(self, tmpValue)</dt><dd><tt>Pre-conditon:&nbsp;Requires&nbsp;two&nbsp;arguments.<br>
+&nbsp;<br>
+Post-conditions:&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a>&nbsp;created&nbsp;from&nbsp;floor&nbsp;division&nbsp;is&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigned&nbsp;a&nbsp;variable<br>
+&nbsp;<br>
+Description:&nbsp;Takes&nbsp;two&nbsp;arguments&nbsp;and&nbsp;makes&nbsp;them&nbsp;arguments&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;floor&nbsp;division.&nbsp;Then&nbsp;whatever&nbsp;is&nbsp;returned&nbsp;from<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;floor&nbsp;division&nbsp;is&nbsp;returned&nbsp;by&nbsp;true&nbsp;division.</tt></dd></dl>
+
+<dl><dt><a name="Fraction-getDenominator"><strong>getDenominator</strong></a>(self)</dt><dd><tt>Pre-conditon:&nbsp;One&nbsp;argument&nbsp;of&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;<br>
+Post-conditions:&nbsp;None<br>
+&nbsp;<br>
+Description:&nbsp;Returns&nbsp;denominator&nbsp;of&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a></tt></dd></dl>
+
+<dl><dt><a name="Fraction-getNumerator"><strong>getNumerator</strong></a>(self)</dt><dd><tt>Pre-conditon:&nbsp;One&nbsp;argument&nbsp;of&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;<br>
+Post-conditions:&nbsp;None<br>
+&nbsp;<br>
+Description:&nbsp;Returns&nbsp;numerator&nbsp;of&nbsp;fraction&nbsp;<a href="builtins.html#object">object</a></tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Author</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Paul&nbsp;Kummer</td></tr></table>
+</body></html>
